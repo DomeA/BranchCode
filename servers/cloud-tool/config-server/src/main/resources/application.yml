@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    #git服务配置信息
+    config:
+      server:
+        git:
+          uri: https://github.com/DomeA/Nebula.git
+          #从以下文件夹下下面查找配置文件
+          search-paths: /repo/dev*,/repo/test*,/repo/prod*
+        bootstrap: true

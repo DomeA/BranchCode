@@ -1,0 +1,11 @@
+language: java
+jdk:
+  - oraclejdk8
+sudo: enabled
+xcode_project: /code/Leo/mappingo #项目文件相对于.travis.yml文件的路径
+before_install:
+  - cd /code/Leo/mappingo
+install:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+

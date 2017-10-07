@@ -1,11 +1,4 @@
-# Compiled class file
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -14,9 +7,30 @@
 *.jar
 *.war
 *.ear
-*.zip
-*.tar.gz
-*.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+\.idea/
+
+*.iml
+
+servers/micro-service/spatial-data/target/
+
+servers/micro-service/gis-process/target/
+
+servers/micro-service/mappingo-api/target/
+
+servers/cloud-tool/monitor-server/target/
+
+servers/cloud-tool/discovery-server/target/
+
+servers/cloud-tool/config-server/target/
+
+servers/util/mp-dto/target/
+
+website/portal/src/main/webapp/node_modules/
+
+website/portal/src/main/webapp/bower_components/
+
+website/portal/src/main/webapp/\.idea/

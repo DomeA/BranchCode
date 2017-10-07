@@ -1,0 +1,30 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: discoveryServer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    hostname: localhost
+    metadataMap:
+      instanceId: ${spring.application.name}:${random.value}
+#    data-center-info:
+#    environment:
+    status-page-url-path: /info
+  server:
+    # 设为false，关闭自我保护
+    enable-self-preservation: false
+    # 清理间隔（单位毫秒，默认是60*1000）
+    eviction-interval-timer-in-ms: 10000
+#info.build.name=@project.name@
+#info.build.description=@project.description@
+#info.build.groupId=@project.groupId@
+#info.build.artifact=@project.artifactId@
+#info.build.version=@project.version@
+management:
+  context-path: /admin
